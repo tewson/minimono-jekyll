@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  {%- include head.html -%}
+  {%- include head.jekyll -%}
 
   <body>
     <main class="page-content" aria-label="Content">
