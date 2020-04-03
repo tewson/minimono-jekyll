@@ -3,10 +3,17 @@
   {%- include head.jekyll -%}
 
   <body>
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+
+    <div class="layout-container">
+
+      {%- include header.jekyll -%}
+
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+
+    </div>
   </body>
 </html>
