@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 14px;
 }
 
@@ -34,6 +34,10 @@ nav {
 .layout-container {
   max-width: 600px;
   margin: 0 auto;
+}
+
+.post-meta {
+  text-align: right;
 }
 
 @media (max-width: 639px) {
