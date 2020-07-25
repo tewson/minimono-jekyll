@@ -1,19 +1,14 @@
 <header role="banner">
   <h1>
-    <a href="/" title="Home" rel="home">{{ site.title | escape }}</a>
+    <a href="/" rel="home" title="Home">{{ site.title | escape }}</a>
   </h1>
   <nav role="navigation">
     <ul>
       {% for nav_link in site.nav_links %}
         <li>
-          <a href="{{ nav_link.href }}" aria-label="{{ nav_link.title }}">
-            <i
-              class="{{ nav_link.font_awesome_class }}"
-              aria-hidden="true"
-              title="{{ nav_link_title }}"
-            >
-            </i>
-          </a>
+          <a href="{{ nav_link.href }}" aria-label="{{ nav_link.title }}"><!--
+         --><i class="{{ nav_link.font_awesome_class }}" aria-hidden="true" title="{{ nav_link_title }}"></i><!--
+       --></a>
         </li>
       {% endfor %}
     </ul>
