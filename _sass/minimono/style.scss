@@ -36,8 +36,13 @@ nav {
   margin: 0 auto;
 }
 
-.post-meta {
+.post-meta,
+.read-more {
   text-align: right;
+}
+
+article {
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 639px) {
