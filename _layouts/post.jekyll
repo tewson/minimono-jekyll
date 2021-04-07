@@ -30,4 +30,17 @@ layout: default
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+  {%- if site.data.comments[page.path].size > 0 -%}
+    {% assign comments = site.data.comments[page.path] %}
+    <h2>Comments</h2>
+    {%- for commentItem in comments -%}
+      <p>
+        {{ commentItem.author }}
+      </p>
+      <p>
+        {{ commentItem.comment }}
+      </p>
+    {%- endfor -%}
+  {%- endif -%}
 </article>
