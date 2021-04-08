@@ -1,5 +1,8 @@
-_posts/2020-04-02-welcome-to-jekyll.md:
-  - author: test
+_posts/2020-04-02-with-comments.md:
+  - author:
+      name: Author 1
+      website: http://author1.com
     comment: test comment
-  - author: test 2
+  - author:
+      name: test 2
     comment: test comment 2

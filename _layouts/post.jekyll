@@ -35,12 +35,19 @@ layout: default
     {% assign comments = site.data.comments[page.path] %}
     <h2>Comments</h2>
     {%- for commentItem in comments -%}
-      <p>
-        {{ commentItem.author }}
-      </p>
-      <p>
-        {{ commentItem.comment }}
-      </p>
+      <div class="comment">
+        <div class="comment-meta">
+          Submitted by&nbsp;
+          {%- if commentItem.author.website -%}
+            <a href="{{ commentItem.author.website }}">{{ commentItem.author.name }}</a>
+          {%- else -%}
+            {{ commentItem.author.name }}
+          {%- endif -%}
+        </div>
+        <div class="comment-body">
+          {{ commentItem.comment }}
+        </div>
+      </div>
     {%- endfor -%}
   {%- endif -%}
 </article>
