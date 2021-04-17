@@ -4,7 +4,13 @@ A monospaced Jekyll theme.
 
 ## Getting Started
 
+### Using the default config
+
 - `bundle exec jekyll serve`
+
+### Overriding config
+
+- `bundle exec jekyll serve --config _config.yml,_config-dev.yml`
 
 ## Config
 

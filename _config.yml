@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Minimono
-font_awesome_kit_url:
+font_awesome_kit_url: https://kit.fontawesome.com/1650c0caa0.js
 nav_links:
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -31,6 +31,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
 show_excerpts: true
+excerpt_separator: <!--break-->
 
 # Build settings
 theme: minimono
